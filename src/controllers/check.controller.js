@@ -15,4 +15,6 @@ router.get("/", async function (req, res) {
     catch (err) {
         return res.status(400).send(err.message);
     }
-})
+});
+
+module.exports = router;
