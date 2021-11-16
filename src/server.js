@@ -14,6 +14,7 @@ app.use(cors());
 
 // Controller
 
+const checkController = require("./controllers/check.controller");
 const professionalController = require("./controllers/professional.controller");
 const userController = require("./controllers/user.controller");
 const servicesController = require("./controllers/services.controller");
@@ -22,6 +23,7 @@ const serviceProfessionalController = require("./controllers/serviceProfessional
 const professionalProfileController = require("./controllers/professionalProfile.controller");
 
 
+app.use("/check", checkController);
 app.use("/professional", professionalController);
 app.use("/users", userController);
 app.use("/services", servicesController);
